@@ -7,7 +7,7 @@ class RedesApp extends StatelessWidget {
   final materialApp = MaterialApp(
     title: UIData.appName,
     theme: ThemeData(
-      primaryColor: Colors.black,
+      primaryColor: Color(0xff1a87c5),
       fontFamily: UIData.montFont,
     ),
     debugShowCheckedModeBanner: false,
@@ -15,8 +15,6 @@ class RedesApp extends StatelessWidget {
     home: HomePage(),
 
   );
-
-
 
   @override
   Widget build(BuildContext context) {

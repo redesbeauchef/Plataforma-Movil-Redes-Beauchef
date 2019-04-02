@@ -29,6 +29,10 @@ class _HomePageState extends State<HomePage> {
   );
 
   Widget bodySliverList() {
-
+    return Container(
+        child: Center(
+            child: Text('Hello_world'),
+        ),
+    );
   }
 }
