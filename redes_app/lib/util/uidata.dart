@@ -1,5 +1,9 @@
 import 'dart:core';
 
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
+
 class UIData{
   //routes
   static const String root= "/";
@@ -22,4 +26,11 @@ class UIData{
 
   //login
   //...
+
+//colors
+  static List<Color> kitGradients = [
+    //Color(0xff1a87c5),
+    Colors.white,
+    Colors.white,
+  ];
 }
