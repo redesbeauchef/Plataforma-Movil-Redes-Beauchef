@@ -38,12 +38,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget appBar() => SliverAppBar(
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.transparent,
     pinned: true,
-    elevation: 10.0,
+    elevation: 5.0,
     forceElevated: true,
     expandedHeight: 150,
-
 
     leading: IconButton(
       icon: const Icon(Icons.menu),
@@ -57,9 +56,12 @@ class _HomePageState extends State<HomePage> {
         icon: const Icon(Icons.search),
         color: Colors.grey,
         tooltip: 'Search',
-        onPressed: () {/* ... */},      )
+        onPressed: () {/* ... */},
+      )
     ],
 
+    bottom: PreferredSize(child: Container(width: 0, height: 0,),preferredSize: Size.fromHeight(0)),
+    
     flexibleSpace: FlexibleSpaceBar(
       background: Container(
         decoration: BoxDecoration(
@@ -67,34 +69,19 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       centerTitle: true,
-      title: Container(
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            InkWell(
-              onTap: () => {},
-              child: Container(
-                height: 100,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                child: Image.asset('assets/redesIcon.png'),
-              ),
-            ),
-            /*Text(
-              UIData.appName,
-              style: TextStyle(
-                  color: Colors.black87,
-                  fontWeight: FontWeight.w700,
-                  fontSize: 20,
-              ),
-            ),*/
-          ],
-        ),
-      ),
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Image.asset(
+            'assets/redesIcon.png',
+            fit: BoxFit.contain,
+            height: 100,
+          )
+          Container(
+
+          )
+        ],
+      )
     ),
   );
 }
