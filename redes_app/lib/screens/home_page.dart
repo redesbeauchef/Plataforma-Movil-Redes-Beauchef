@@ -77,9 +77,6 @@ class _HomePageState extends State<HomePage> {
             fit: BoxFit.contain,
             height: 100,
           )
-          Container(
-
-          )
         ],
       )
     ),
