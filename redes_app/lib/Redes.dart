@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:redes_app/screens/home_page.dart';
+import 'package:redes_app/screens/HomePage.dart';
 import 'package:redes_app/util/uidata.dart';
 import 'package:fluro/fluro.dart';
 
