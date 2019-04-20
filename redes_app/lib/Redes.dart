@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:redes_app/routes.dart/Routes.dart';
 import 'package:redes_app/screens/HomePage.dart';
 import 'package:redes_app/util/uidata.dart';
-import 'package:fluro/fluro.dart';
 
 class RedesApp extends StatelessWidget {
+  // Init App and Parameters
   final materialApp = MaterialApp(
     title: UIData.appName,
     theme: ThemeData(
@@ -13,7 +14,7 @@ class RedesApp extends StatelessWidget {
     debugShowCheckedModeBanner: false,
     showPerformanceOverlay: false,
     home: HomePage(),
-
+    onGenerateRoute: Routes.getRoute,
   );
 
   @override

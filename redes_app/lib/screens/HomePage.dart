@@ -10,6 +10,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _scaffoldState = GlobalKey<ScaffoldState>();
   Size deviceSize;
+  // ignore: unused_field
   BuildContext _context;
 
   @override
@@ -21,14 +22,14 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget homeScaffold(BuildContext context) => Theme(
-    data: Theme.of(context).copyWith(
-      canvasColor: Colors.white,
-    ),
-    child: Scaffold(
-      key: _scaffoldState,
-      body: bodySliverList(),
-    ),
-  );
+        data: Theme.of(context).copyWith(
+          canvasColor: Colors.white,
+        ),
+        child: Scaffold(
+          key: _scaffoldState,
+          body: bodySliverList(),
+        ),
+      );
 
   Widget bodySliverList() {
     return Column(
@@ -38,7 +39,4 @@ class _HomePageState extends State<HomePage> {
       ],
     );
   }
-
-
 }
-
